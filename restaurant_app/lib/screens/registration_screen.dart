@@ -148,7 +148,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
-        title: Text("Restaurant App"),
+        title: Text("Register"),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -162,21 +162,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      // SizedBox(
-                      //   height: 100,
-                      //   child: Image.asset(
-                      //     "assets/fh.png",
-                      //     fit: BoxFit.contain,
-                      //   ),
-                      // ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            "User and Restaurant Registration",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          )
-                        ],
+                      SizedBox(
+                        height: 100,
+                        child: Image.asset(
+                          "assets/fh.png",
+                          fit: BoxFit.contain,
+                        ),
                       ),
                       SizedBox(
                         height: 20,
@@ -185,12 +176,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       SizedBox(
                         height: 10,
                       ),
-
                       emailField,
                       SizedBox(
                         height: 10,
                       ),
-
                       passwordField,
                       SizedBox(
                         height: 20,
@@ -223,7 +212,22 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             ),
                           )
                         ],
-                      )
+                      ),
+                      SizedBox(
+                        height: 15,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          GestureDetector(
+                            onTap: () {},
+                            child: SizedBox(
+                              height: 100,
+                              //child: Image.asset('assets/google.png'),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   )),
             ),

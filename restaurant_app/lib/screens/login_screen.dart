@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_app/screens/registration_screen.dart';
-import 'package:restaurant_app/screens/restaurant_login_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -54,6 +53,12 @@ class _LoginScreenState extends State<LoginScreen> {
             hintText: "password",
             border:
                 OutlineInputBorder(borderRadius: BorderRadius.circular(10))));
+    var text = Text(
+      "Login",
+      textAlign: TextAlign.center,
+      style: TextStyle(
+          fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
+    );
     final loginButton = Material(
       elevation: 5,
       borderRadius: BorderRadius.circular(30),
@@ -62,19 +67,14 @@ class _LoginScreenState extends State<LoginScreen> {
         padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
         onPressed: () {},
-        child: Text(
-          "Login",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
-        ),
+        child: text,
       ),
     );
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
-        title: Text("Restaurant App"),
+        title: Text("Login"),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -88,21 +88,12 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      // SizedBox(
-                      //   height: 100,
-                      //   child: Image.asset(
-                      //     "assets/fh.png",
-                      //     fit: BoxFit.contain,
-                      //   ),
-                      // ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            "User and Restaurant login",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          ),
-                        ],
+                      SizedBox(
+                        height: 100,
+                        child: Image.asset(
+                          "assets/fh.png",
+                          fit: BoxFit.contain,
+                        ),
                       ),
                       SizedBox(
                         height: 20,
