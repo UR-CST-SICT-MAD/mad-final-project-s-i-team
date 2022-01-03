@@ -1,6 +1,6 @@
 {
-    "name": "restaurant_app",
-    "short_name": "restaurant_app",
+    "name": "flutter_dbms",
+    "short_name": "flutter_dbms",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
