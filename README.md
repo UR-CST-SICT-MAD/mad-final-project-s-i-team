@@ -2,8 +2,8 @@
 # Final Project M.A.D 2021 (for Both IT & IS)
 
 1.  Department:IT
-2.  Member 1 Reg No:219000719
-3.  Member 2 Reg No:219010543
+2.  Member 1 Reg No:219000719 : Hakizimana Sabato
+3.  Member 2 Reg No:219010543 : Ikuze Euphrosine
 
 
 Welcome to the final project
